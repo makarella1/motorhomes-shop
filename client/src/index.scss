@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('./styles/_reset.scss');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  @apply bg-primary text-text-primary;
+}

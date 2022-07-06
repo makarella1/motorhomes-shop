@@ -1,0 +1,15 @@
+.header {
+  @apply h-96 flex items-center;
+
+  .container {
+    @apply flex flex-col animate-fadeIn;
+
+    .title {
+      @apply font-bold text-4xl mb-10;
+    }
+
+    .text {
+      @apply text-xl whitespace-pre-line;
+    }
+  }
+}

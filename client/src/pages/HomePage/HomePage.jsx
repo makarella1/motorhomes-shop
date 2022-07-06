@@ -1,5 +1,13 @@
+import Header from '../../components/Header';
+import Motorhomes from '../../components/Motorhomes';
+
 const HomePage = () => {
-  return <h1>Home Page</h1>;
+  return (
+    <>
+      <Header />
+      <Motorhomes />
+    </>
+  );
 };
 
 export default HomePage;

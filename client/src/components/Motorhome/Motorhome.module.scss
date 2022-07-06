@@ -1,0 +1,23 @@
+.plane {
+  @apply relative cursor-pointer shadow-lg rounded-md transition-all hover:scale-105;
+
+  .capacity {
+    @apply absolute rounded-full text-text-primary bg-primary top-2 left-2 p-5 font-bold w-1 h-1 text-center flex items-center justify-center border-2 border-text-primary;
+  }
+
+  .image {
+    @apply object-cover h-[300px] w-[450px] rounded-t-md;
+  }
+
+  .info {
+    @apply flex justify-between px-4 py-5;
+
+    .title {
+      @apply font-bold;
+    }
+
+    .price {
+      @apply font-semibold;
+    }
+  }
+}

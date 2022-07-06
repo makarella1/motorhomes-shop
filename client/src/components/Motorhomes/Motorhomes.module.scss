@@ -1,0 +1,19 @@
+.main {
+  @apply mb-10;
+
+  .motorhomesContainer {
+    @apply justify-evenly gap-8 flex-wrap items-center;
+  }
+
+  .sort {
+    @apply h-20 mb-10;
+  }
+
+  .sortWrapper {
+    @apply flex justify-between;
+  }
+
+  .addLink {
+    @apply p-4 border-4 border-text-primary rounded-2xl transition-all font-semibold hover:text-primary hover:bg-text-primary;
+  }
+}
