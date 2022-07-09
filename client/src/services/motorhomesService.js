@@ -12,9 +12,16 @@ const getMotorhome = async (id) => {
   return motorhome.data;
 };
 
+const createMotorhome = async (data) => {
+  const motorhome = await axios.post(`/api/motorhomes/`, data);
+
+  return motorhome.data;
+};
+
 const motorhomesService = {
   getMotorhomes,
   getMotorhome,
+  createMotorhome,
 };
 
 export default motorhomesService;

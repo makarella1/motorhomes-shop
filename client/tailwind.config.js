@@ -10,9 +10,15 @@ module.exports = {
           '50%': { transform: 'translateY(-20%)', opacity: 0.5 },
           '100%': { transform: 'translateY(0)', opacity: 1 },
         },
+        fadeInRight: {
+          '0%': { transform: 'translateX(50%)', opacity: 0 },
+          '50%': { transform: 'translateX(-10%)', opacity: 0.5 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-out forwards',
+        fadeInRight: 'fadeInRight 1s ease-out forwards',
       },
     },
     colors: {

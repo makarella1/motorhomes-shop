@@ -53,6 +53,8 @@ export const createMotorhome = async (req, res) => {
     };
   }
 
+  console.log(errors);
+
   if (Object.keys(errors).length > 0) {
     return res.status(400).json(errors);
   }

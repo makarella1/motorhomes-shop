@@ -2,7 +2,7 @@
   @apply mb-10;
 
   .motorhomesContainer {
-    @apply justify-evenly gap-8 flex-wrap items-center;
+    @apply justify-evenly gap-8 flex-wrap items-center animate-fadeInRight;
   }
 
   .sort {

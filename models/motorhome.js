@@ -8,7 +8,7 @@ const MotorhomeSchema = new Schema({
     required: true,
   },
   price: {
-    type: Number,
+    type: String,
     required: true,
   },
   description: {
@@ -16,7 +16,7 @@ const MotorhomeSchema = new Schema({
     required: true,
   },
   capacity: {
-    type: Number,
+    type: String,
     required: true,
   },
   image: {

@@ -24,6 +24,10 @@ const MotorhomePage = () => {
     navigate(paths.home);
   };
 
+  const orderHandler = () => {
+    navigate(paths.order);
+  };
+
   useEffect(() => {
     dispatch(reset());
     dispatch(getMotorhome(id));
@@ -50,7 +54,9 @@ const MotorhomePage = () => {
             <h2 className={styles.title}>{motorhome.name}</h2>
             <p className={styles.description}>{motorhome.description}</p>
             <p className={styles.price}>USD {motorhome.price}</p>
-            <Button className={styles.orderBtn}>Order this Motorhome!</Button>
+            <Button className={styles.orderBtn} onClick={orderHandler}>
+              Order this Motorhome!
+            </Button>
           </div>
           <div className={styles.imageWrapper}>
             {motorhome.image && (

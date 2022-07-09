@@ -1,0 +1,31 @@
+.formWrapper {
+  @apply py-[40px] flex flex-col;
+
+  .backBtn {
+    @apply self-start mb-5;
+  }
+
+  .title {
+    @apply text-2xl font-semibold text-center mb-10;
+  }
+}
+
+.formContainer {
+  @apply max-w-[480px] w-full mx-auto;
+
+  .inputContainer {
+    @apply mb-5;
+  }
+
+  .textarea {
+    @apply w-full border border-text-primary p-3;
+  }
+
+  .submitBtn {
+    @apply w-full hover:bg-text-secondary transition-all;
+  }
+}
+
+.error {
+  @apply text-secondary;
+}

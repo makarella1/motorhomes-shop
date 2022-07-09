@@ -18,10 +18,6 @@ app.use('/static', express.static(__dirname + '/assets'));
 
 app.use('/api/motorhomes', motorhomesRouter);
 
-app.get('/', (req, res) => {
-  res.send('Hello!');
-});
-
 mongoose
   .connect(process.env.DB_URL)
   .then(() =>

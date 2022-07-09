@@ -11,6 +11,7 @@ import Motorhome from '../Motorhome/Motorhome';
 
 import styles from './Motorhomes.module.scss';
 import Button from '../Button';
+import { paths } from '../../utils/paths';
 
 const Motorhomes = () => {
   const { motorhomes, isLoading } = useSelector((state) => state.motorhomes);
@@ -54,7 +55,7 @@ const Motorhomes = () => {
           <Button onClick={sortHandler}>
             Sort by price {isDesc ? '↓' : '↑'}
           </Button>
-          <Link className={styles.addLink} to="/add">
+          <Link className={styles.addLink} to={paths.create}>
             Add your own motorhome!
           </Link>
         </ContentWrapper>

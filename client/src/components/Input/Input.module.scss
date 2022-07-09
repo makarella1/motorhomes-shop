@@ -1,0 +1,10 @@
+.input {
+  @apply p-3 border border-text-primary w-full placeholder:text-text-secondary file:bg-transparent 
+  file:border-none file:mr-10 file:rounded-full
+ file:bg-text-secondary file:p-3 file:text-primary
+ file:hover:bg-text-primary file:cursor-pointer file:transition-all;
+}
+
+.error {
+  @apply text-secondary mt-2;
+}
