@@ -35,7 +35,7 @@ export const createMotorhome = async (req, res) => {
     };
   }
 
-  if (!req.body.description || req.body.description.length > 700) {
+  if (!req.body.description || req.body.description.length > 430) {
     errors.description = {
       message: "Description is missing or it's too long",
     };
@@ -43,7 +43,7 @@ export const createMotorhome = async (req, res) => {
 
   if (!req.body.capacity || req.body.capacity > 99 || req.body.capacity < 1) {
     errors.capacity = {
-      message: 'Capacity is missing or the number you provided is invalid',
+      message: "Capacity is missing or the number you've provided is invalid",
     };
   }
 

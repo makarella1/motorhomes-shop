@@ -1,0 +1,31 @@
+.motorhomeWrapper {
+  @apply py-[100px];
+}
+
+.motorhomeContainer {
+  @apply flex items-center w-full justify-between h-[50vh];
+
+  .info {
+    @apply flex flex-col items-start justify-between w-[400px] h-full;
+
+    .title {
+      @apply font-bold text-3xl;
+    }
+
+    .price {
+      @apply font-bold text-xl;
+    }
+
+    .orderBtn {
+      @apply p-4 text-text-primary bg-primary border-2 border-text-primary rounded-none hover:text-text-secondary hover:bg-text-primary transition-all;
+    }
+  }
+
+  .imageWrapper {
+    @apply ml-12 w-[600px] h-[400px];
+
+    .image {
+      @apply w-full h-full;
+    }
+  }
+}

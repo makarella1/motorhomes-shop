@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { getMotorhomes } from '../../store/slices/motorhomesSlice';
 import { Link } from 'react-router-dom';
 
-import { useSortMotorhomes } from '../../hooks/useSort';
+import { useSortMotorhomes } from '../../hooks/useSortMotorhomes';
 
 import Spinner from '../Spinner';
 import ContentWrapper from '../ContentWrapper';
@@ -52,7 +52,7 @@ const Motorhomes = () => {
       <div className={styles.sort}>
         <ContentWrapper className={styles.sortWrapper}>
           <Button onClick={sortHandler}>
-            Sort by price {isDesc ? '↑' : '↓'}
+            Sort by price {isDesc ? '↓' : '↑'}
           </Button>
           <Link className={styles.addLink} to="/add">
             Add your own motorhome!

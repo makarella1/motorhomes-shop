@@ -1,3 +1,7 @@
 .button {
   @apply bg-text-primary text-primary p-4 rounded-2xl;
 }
+
+.backBtn {
+  @apply text-text-secondary hover:underline underline-offset-8;
+}
